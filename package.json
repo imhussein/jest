@@ -1,0 +1,30 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "test": "jest",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imhussein/internals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imhussein/internals/issues"
+  },
+  "homepage": "https://github.com/imhussein/internals#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "materialize-css": "^1.0.0",
+    "mongoose": "^5.7.3",
+    "puppeteer": "^1.20.0",
+    "redis": "^2.8.0"
+  }
+}
